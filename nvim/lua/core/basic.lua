@@ -12,7 +12,7 @@ opt.tabstop = 4
 opt.shiftwidth = 0
 
 opt.autoread = true
-opt.showmode = false
+opt.showmode = true
 
 opt.splitbelow = true
 opt.splitright = true
@@ -25,3 +25,5 @@ opt.hlsearch = false
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 opt.termguicolors = true
+
+opt.clipboard = "unnamedplus"

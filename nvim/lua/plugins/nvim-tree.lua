@@ -10,6 +10,7 @@ return {
 		vim.cmd("NvimTreeOpen")
 	end,
 	keys = {
+		-- Toggle NvimTree
 		{ "<leader>tg", "<Cmd>:NvimTreeToggle<Return>", silent = true },
 	},
 }

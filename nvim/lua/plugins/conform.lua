@@ -1,3 +1,11 @@
+local ft_to_formatter = {
+	lua = { "stylua" },
+	cpp = { "clang-format" },
+	vue = { "prettier" },
+	typescript = { "prettier" },
+	javascript = { "prettier", "prettierd" },
+}
+
 return {
 	"stevearc/conform.nvim",
 	dependencies = {
@@ -14,16 +22,10 @@ return {
 			end
 		end
 
-		local ft_to_formatter = {
-			lua = { "stylua" },
-			cpp = { "clang-format" },
-			vue = { "prettier" },
-			typescript = { "prettier" },
-			javascript = { "prettier" },
-		}
-
-		for _, package_name in pairs(ft_to_formatter) do
-			install(package_name)
+		for _, package_list in pairs(ft_to_formatter) do
+			for _, package_name in ipairs(package_list) do
+				install(package_name)
+			end
 		end
 
 		require("conform").setup({
@@ -35,6 +37,6 @@ return {
 		})
 	end,
 	keys = {
-		{ "<leader>lf", "<Cmd>:lua require('conform').format()<Return>", silent = true },
+		{ "<leader>lf", ":lua require('conform').format()<Return>", silent = true },
 	},
 }

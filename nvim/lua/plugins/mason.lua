@@ -1,3 +1,22 @@
+local packages = {
+	["lua-language-server"] = {
+		settings = {
+			Lua = {
+				diagnostics = {
+					globals = { "vim" },
+				},
+			},
+		},
+	},
+	["html-lsp"] = {},
+	["css-lsp"] = {},
+	["typescript-language-server"] = {},
+	["emmet-ls"] = {},
+	clangd = {},
+	["vue-language-server"] = {},
+	["tailwindcss-language-server"] = {},
+}
+
 return {
 	"mason-org/mason.nvim",
 	event = "VeryLazy",
@@ -21,23 +40,6 @@ return {
 			vim.lsp.config(lspconfig, config)
 		end
 
-		local packages = {
-			["lua-language-server"] = {
-				settings = {
-					Lua = {
-						diagnostics = {
-							globals = { "vim" },
-						},
-					},
-				},
-			},
-			["html-lsp"] = {},
-			["css-lsp"] = {},
-			["typescript-language-server"] = {},
-			["emmet-ls"] = {},
-			clangd = {},
-			["vue-language-server"] = {},
-		}
 		for package_name, config in pairs(packages) do
 			setup(package_name, config)
 		end

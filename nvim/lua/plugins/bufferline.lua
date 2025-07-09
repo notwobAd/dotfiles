@@ -38,6 +38,7 @@ return {
 		{ "<leader>bp", ":BufferLinePick<Return>", opts },
 		-- Delete tab
 		{ "<leader>bw", ":bdelete!<Return>", opts },
+		{ "<leader>bd", ":bdelete!<Return>", opts },
 	},
 	lazy = false,
 }
