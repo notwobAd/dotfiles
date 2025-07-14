@@ -27,6 +27,10 @@ keymap.set("n", "sk", "<C-w>k")
 keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sl", "<C-w>l")
+keymap.set("n", "<leader>sk", "<C-w>k")
+keymap.set("n", "<leader>sj", "<C-w>j")
+keymap.set("n", "<leader>sh", "<C-w>h")
+keymap.set("n", "<leader>sl", "<C-w>l")
 
 -- Resize window
 keymap.set("n", "<C-w><up>", "<C-w>+")
