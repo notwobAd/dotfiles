@@ -1,7 +1,7 @@
 return {
 	"xeluxee/competitest.nvim",
 	dependencies = {
-		"MuniTanjim/nui.nvim",
+		"MunifTanjim/nui.nvim",
 	},
 	opts = {
 		testcases_use_single_file = true,

@@ -16,5 +16,13 @@ return {
 			end,
 		},
 	},
-	opts = {},
+	opts = {
+		lsp = {
+			signature = {
+				auto_open = {
+					enabled = false,
+				},
+			},
+		},
+	},
 }

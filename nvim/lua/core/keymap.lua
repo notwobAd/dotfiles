@@ -12,7 +12,7 @@ keymap.set({ "n", "i" }, "<C-z>", "<Cmd>:undo<Return>", opts)
 keymap.set({ "n", "i" }, "<C-y>", "<Cmd>:redo<Return>", opts)
 
 -- Save
-keymap.set({ "n", "i" }, "<C-s>", "<Cmd>:w<Return>", opts)
+keymap.set({ "n", "i" }, "<C-s>", "<Cmd>:w!<Return>", opts)
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G", opts)
 -- Quit
@@ -41,3 +41,6 @@ keymap.set("n", "<C-w><right>", "<C-w>>")
 -- Use terminal
 keymap.set({ "n", "i" }, "<C-`>", "<Cmd>:terminal<Return>", opts)
 keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
+-- Lazy
+keymap.set("n", "<leader>L", ":Lazy<Return>", opts)

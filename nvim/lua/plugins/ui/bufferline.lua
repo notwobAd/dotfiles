@@ -3,7 +3,6 @@ return {
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 		"neovim/nvim-lspconfig",
-		"xiyaowong/transparent.nvim",
 	},
 	opts = {
 		options = {
@@ -23,10 +22,6 @@ return {
 			end,
 		},
 	},
-	config = function(_, opts)
-		require("bufferline").setup(opts)
-		require("transparent").clear_prefix("BufferLine")
-	end,
 	keys = {
 		-- Prev tab
 		{ "<S-h>", ":BufferLineCyclePrev<Return>", silent = true },
@@ -42,6 +37,19 @@ return {
 		-- Delete tab
 		{ "<leader>bw", ":bdelete!<Return>", silent = true },
 		{ "<leader>bd", ":bdelete!<Return>", silent = true },
+		-- Move buffer
+		{ "<C-h>", ":BufferLineMovePrev<Return>", silent = true },
+		{ "<C-l>", ":BufferLineMoveNext<Return>", silent = true },
+		-- Move to buffer
+		{ "<leader>1", ":BufferLineGoToBuffer 1<Return>", silent = true },
+		{ "<leader>2", ":BufferLineGoToBuffer 2<Return>", silent = true },
+		{ "<leader>3", ":BufferLineGoToBuffer 3<Return>", silent = true },
+		{ "<leader>4", ":BufferLineGoToBuffer 4<Return>", silent = true },
+		{ "<leader>5", ":BufferLineGoToBuffer 5<Return>", silent = true },
+		{ "<leader>6", ":BufferLineGoToBuffer 6<Return>", silent = true },
+		{ "<leader>7", ":BufferLineGoToBuffer 7<Return>", silent = true },
+		{ "<leader>8", ":BufferLineGoToBuffer 8<Return>", silent = true },
+		{ "<leader>9", ":BufferLineGoToBuffer 9<Return>", silent = true },
 	},
 	lazy = false,
 }

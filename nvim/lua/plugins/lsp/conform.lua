@@ -4,6 +4,7 @@ local ft_to_formatter = {
 	vue = { "prettier" },
 	typescript = { "prettier" },
 	javascript = { "prettier" },
+	yaml = { "prettier" },
 }
 
 return {
@@ -43,6 +44,12 @@ return {
 		})
 	end,
 	keys = {
-		{ "<leader>lf", ":lua require('conform').format()<Return>", silent = true },
+		{
+			"<leader>lf",
+			function()
+				require("conform").format()
+			end,
+			silent = true,
+		},
 	},
 }

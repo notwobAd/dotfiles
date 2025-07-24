@@ -7,6 +7,10 @@ return {
 			"TabLineFill",
 			-- Lspsaga
 			"FloatBorder",
+			-- Blink
+			"BlinkCmpMenu",
+			"BlinkCmpDoc",
+			"BlinkCmpDocBorder",
 		},
 	},
 }

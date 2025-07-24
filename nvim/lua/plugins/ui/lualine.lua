@@ -26,6 +26,9 @@ return {
 		options = {
 			icons_enabled = true,
 			theme = "auto",
+			disabled_filetypes = {
+				"dashboard",
+			},
 		},
 		sections = {
 			lualine_a = { "mode" },

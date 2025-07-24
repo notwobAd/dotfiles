@@ -17,7 +17,7 @@ return {
 		local package_to_config = {}
 		for _, file in ipairs(vim.fn.glob("~/.config/nvim/lua/plugins/lsp/settings/*.lua", false, true)) do
 			local basename = vim.fs.basename(file)
-			local package_name = string.sub(basename, 0, string.len(basename) - 4)
+			local package_name = string.sub(basename, 0, #basename - 4)
 			local success, config = pcall(require, "plugins.lsp.settings." .. package_name)
 			if success then
 				package_to_config[package_name] = config
@@ -40,6 +40,7 @@ return {
 		for package_name, config in pairs(package_to_config) do
 			setup(package_name, config)
 		end
+		vim.lsp.enable({ "vtsls", "vue_ls" })
 		require("mason-lspconfig").setup({})
 
 		vim.api.nvim_exec_autocmds("FileType", {})
