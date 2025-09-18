@@ -40,7 +40,6 @@ return {
 		for package_name, config in pairs(package_to_config) do
 			setup(package_name, config)
 		end
-		vim.lsp.enable({ "vtsls", "vue_ls" })
 		require("mason-lspconfig").setup({})
 
 		vim.api.nvim_exec_autocmds("FileType", {})

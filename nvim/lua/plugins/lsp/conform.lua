@@ -5,6 +5,7 @@ local ft_to_formatter = {
 	typescript = { "prettier" },
 	javascript = { "prettier" },
 	yaml = { "prettier" },
+	markdown = { "prettier" },
 }
 
 return {
@@ -23,8 +24,8 @@ return {
 			end
 		end
 
-		for _, package_list in pairs(ft_to_formatter) do
-			for _, package_name in ipairs(package_list) do
+		for _, packages in pairs(ft_to_formatter) do
+			for _, package_name in ipairs(packages) do
 				install(package_name)
 			end
 		end

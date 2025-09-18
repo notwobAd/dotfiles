@@ -3,7 +3,11 @@ return {
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 	},
-	opts = {},
+	opts = {
+		git = {
+			ignore = false,
+		},
+	},
 	keys = {
 		-- Toggle NvimTree
 		{ "<leader>tt", ":NvimTreeToggle<Return>", silent = true },

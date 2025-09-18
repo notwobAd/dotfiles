@@ -21,6 +21,8 @@ keymap.set("n", "<C-q>", "<Cmd>:q<Return>", opts)
 -- Vsplit/split
 keymap.set("n", "sv", "<Cmd>:vsplit<Return>", opts)
 keymap.set("n", "ss", "<Cmd>:split<Return>", opts)
+keymap.set("n", "<leader>sv", "<Cmd>:vsplit<Return>", opts)
+keymap.set("n", "<leader>ss", "<Cmd>:split<Return>", opts)
 
 -- Move window
 keymap.set("n", "sk", "<C-w>k")
