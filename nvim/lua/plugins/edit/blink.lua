@@ -72,4 +72,8 @@ return {
 			},
 		},
 	},
+	config = function(_, opts)
+		require("blink.cmp").setup(opts)
+		require("transparent").clear_prefix("Blink")
+	end,
 }
