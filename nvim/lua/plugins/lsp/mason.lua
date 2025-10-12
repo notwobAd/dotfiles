@@ -33,7 +33,10 @@ return {
 			if success and not package:is_installed() then
 				if not notified then
 					vim.notify(
-						package_name .. " is installing." .. "Please make sure nodejs and npm have been installed."
+						package_name
+							.. " is installing."
+							.. " "
+							.. "Please make sure nodejs and npm have been installed."
 					)
 					notified = true
 				end
