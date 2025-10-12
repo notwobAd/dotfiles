@@ -12,6 +12,7 @@ eval "$(fzf --bash --style full)"
 
 alias ls='ls --color=auto'
 alias ll='eza --all --long --git --header --time-style long-iso --icons=always'
+alias lt='eza --all --tree --level=2 --git --header --time-style long-iso --icons=always'
 alias cl='clear'
 alias hc='history -c && history -w'
 alias sps='sudo pacman -S'
