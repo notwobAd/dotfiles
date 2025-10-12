@@ -1,0 +1,29 @@
+@theme "/usr/share/rofi/themes/simple-tokyonight.rasi"
+
+@import "colors.rasi"
+
+* {
+    text-color: @secondary;
+}
+
+window {
+    location: center;
+    background-color: @surface-bright;
+}
+
+inputbar {
+    background-color: @surface-container-high;
+}
+
+textbox {
+    background-color: @surface-container;
+}
+
+element selected {
+    text-color: @on-primary;
+    background-color : @primary;
+}
+
+scrollbar {
+    handle-color: @tertiary;
+}
