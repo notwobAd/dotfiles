@@ -31,12 +31,29 @@
         "widgets": {
             "center": [
                 {
+                    "autoHide": false,
+                    "id": "MediaMini",
+                    "scrollingMode": "hover",
+                    "showAlbumArt": true,
+                    "showVisualizer": true,
+                    "visualizerType": "linear"
+                }
+            ],
+            "left": [
+                {
+                    "autoHide": false,
+                    "id": "ActiveWindow",
+                    "scrollingMode": "hover",
+                    "showIcon": true,
+                    "width": 145
+                },
+                {
                     "hideUnoccupied": false,
                     "id": "Workspace",
                     "labelMode": "index"
                 }
             ],
-            "left": [
+            "right": [
                 {
                     "id": "SystemMonitor",
                     "showCpuTemp": true,
@@ -47,29 +64,12 @@
                     "showNetworkStats": false
                 },
                 {
-                    "autoHide": false,
-                    "id": "ActiveWindow",
-                    "scrollingMode": "hover",
-                    "showIcon": true,
-                    "width": 145
-                },
-                {
-                    "autoHide": false,
-                    "id": "MediaMini",
-                    "scrollingMode": "hover",
-                    "showAlbumArt": false,
-                    "showVisualizer": false,
-                    "visualizerType": "linear"
-                }
-            ],
-            "right": [
-                {
-                    "id": "ScreenRecorder"
-                },
-                {
                     "blacklist": [
                     ],
                     "id": "Tray"
+                },
+                {
+                    "id": "ScreenRecorder"
                 },
                 {
                     "hideWhenZero": true,
@@ -84,16 +84,7 @@
                 },
                 {
                     "displayMode": "onhover",
-                    "id": "Battery",
-                    "warningThreshold": 30
-                },
-                {
-                    "displayMode": "onhover",
                     "id": "Volume"
-                },
-                {
-                    "displayMode": "onhover",
-                    "id": "Brightness"
                 },
                 {
                     "id": "WallpaperSelector"
@@ -250,6 +241,10 @@
         "fontFixedScale": 1,
         "idleInhibitorEnabled": false,
         "monitorsScaling": [
+            {
+                "name": "DP-2",
+                "scale": 1
+            }
         ],
         "tooltipsEnabled": true
     },
