@@ -1,0 +1,18 @@
+[config.wallpaper]
+command = "swww"
+arguments = ["img", "--transition-type", "any"]
+set = true
+
+[templates.hyprland]
+input_path = './templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
+[templates.kitty]
+input_path = './templates/kitty-colors.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = "kitty +kitten themes --reload-in=all 'Snow Dark'"
+
+[templates.rofi]
+input_path = './templates/rofi.colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
