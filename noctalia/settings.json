@@ -1,7 +1,7 @@
 {
     "appLauncher": {
         "backgroundOpacity": 1,
-        "enableClipboardHistory": false,
+        "enableClipboardHistory": true,
         "pinnedExecs": [
         ],
         "position": "center",
@@ -13,7 +13,7 @@
         "cavaFrameRate": 60,
         "mprisBlacklist": [
         ],
-        "preferredPlayer": "",
+        "preferredPlayer": "spotify",
         "visualizerType": "linear",
         "volumeOverdrive": false,
         "volumeStep": 5
@@ -99,9 +99,9 @@
                 },
                 {
                     "customIconPath": "",
-                    "icon": "noctalia",
+                    "icon": "",
                     "id": "ControlCenter",
-                    "useDistroLogo": false
+                    "useDistroLogo": true
                 }
             ]
         }
@@ -155,7 +155,7 @@
     "general": {
         "animationDisabled": false,
         "animationSpeed": 1,
-        "avatarImage": "/home/not2bad/.face",
+        "avatarImage": "/home/not2bad/.frostnova.face.png",
         "dimDesktop": true,
         "forceBlackScreenCorners": false,
         "radiusRatio": 1,
@@ -259,7 +259,7 @@
             {
                 "directory": "/home/not2bad/Pictures/Wallpapers",
                 "name": "DP-2",
-                "wallpaper": "/home/not2bad/Pictures/Wallpapers/123529634_p0.jpg"
+                "wallpaper": "/home/not2bad/Pictures/Wallpapers/G1WUCDpbQAI2YvU.jpg"
             }
         ],
         "randomEnabled": false,
