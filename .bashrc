@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+source /usr/share/nvm/init-nvm.sh
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -19,10 +21,13 @@ alias sps='sudo pacman -S'
 alias fetch='fastfetch'
 alias pxy="export HTTP_PROXY='http://127.0.0.1:7890' HTTPS_PROXY='http://127.0.0.1:7890'"
 alias rm='rm -I'
-alias g='git'
-alias gta='git add'
-alias gtc='git commit'
-alias gtcl='git clone'
+alias gs='git status'
+alias ginit='git init'
+alias gadd='git add'
+alias gco='git commit'
+alias gcl='git clone'
+alias gpush='git push'
+alias gpull='git pull'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
