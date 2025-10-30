@@ -46,3 +46,7 @@ keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 -- Lazy
 keymap.set("n", "<leader>L", ":Lazy<Return>", opts)
+
+-- Go to next 10 lines
+keymap.set("n", "D", "10j")
+keymap.set("n", "U", "10k")
