@@ -3,7 +3,9 @@ local ft_to_formatter = {
 	cpp = { "clang-format" },
 	vue = { "prettier" },
 	typescript = { "prettier" },
+	typescriptreact = { "prettier" },
 	javascript = { "prettier" },
+	javascriptreact = { "prettier" },
 	yaml = { "prettier" },
 	markdown = { "prettier" },
 }

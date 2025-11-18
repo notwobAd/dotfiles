@@ -8,6 +8,7 @@ local ensure_installed = {
 	"markdown_inline",
 	"cpp",
 	"typescript",
+	"tsx",
 	"javascript",
 	"vue",
 	"html",
