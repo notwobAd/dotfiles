@@ -14,8 +14,9 @@ return {
 		require("mason").setup(opts)
 		local registry = require("mason-registry")
 
+		local config_path = vim.fn.stdpath("config")
 		local package_to_config = {}
-		for _, file in ipairs(vim.fn.glob("~/.config/nvim/lua/plugins/lsp/settings/*.lua", false, true)) do
+		for _, file in ipairs(vim.fn.glob(config_path .. "/lua/plugins/lsp/settings/*.lua", false, true)) do
 			local basename = vim.fs.basename(file)
 			local package_name = string.sub(basename, 0, #basename - 4)
 			local success, config = pcall(require, "plugins.lsp.settings." .. package_name)
