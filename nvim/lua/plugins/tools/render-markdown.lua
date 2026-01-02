@@ -14,9 +14,7 @@ return {
 		overrides = {
 			buftype = {
 				nofile = {
-					render_modes = true,
-					padding = { highlight = "NormalFloat" },
-					sign = { enabled = false },
+					enabled = false,
 				},
 			},
 		},
