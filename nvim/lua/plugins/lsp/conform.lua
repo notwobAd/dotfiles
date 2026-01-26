@@ -8,6 +8,7 @@ local ft_to_formatter = {
 	javascriptreact = { "prettier" },
 	yaml = { "prettier" },
 	markdown = { "prettier" },
+	json = { "prettier" },
 }
 
 return {
