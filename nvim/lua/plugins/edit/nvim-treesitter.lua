@@ -16,6 +16,7 @@ local ensure_installed = {
 	"toml",
 	"yaml",
 }
+
 return {
 	"nvim-treesitter/nvim-treesitter",
 	branch = "master",
