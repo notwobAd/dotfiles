@@ -10,6 +10,6 @@ return {
 	},
 	keys = {
 		-- Toggle NvimTree
-		{ "<leader>tt", ":NvimTreeToggle<Return>", silent = true },
+		{ "<leader>tt", "<Cmd>NvimTreeToggle<Return>", silent = true },
 	},
 }

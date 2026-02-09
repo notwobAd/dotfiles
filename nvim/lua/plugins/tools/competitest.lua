@@ -11,10 +11,10 @@ return {
 		},
 	},
 	keys = {
-		{ "<leader>ca", ":CompetiTest add_testcase<Return>", silent = true },
-		{ "<leader>cd", ":CompetiTest delete_testcase<Return>", silent = true },
-		{ "<leader>ce", ":CompetiTest edit_testcase<Return>", silent = true },
-		{ "<leader>cr", ":CompetiTest run<Return>", silent = true },
-		{ "<leader>cs", ":CompetiTest show_ui<Return>", silent = true },
+		{ "<leader>ca", "<Cmd>CompetiTest add_testcase<Return>", silent = true },
+		{ "<leader>cd", "<Cmd>CompetiTest delete_testcase<Return>", silent = true },
+		{ "<leader>ce", "<Cmd>CompetiTest edit_testcase<Return>", silent = true },
+		{ "<leader>cr", "<Cmd>CompetiTest run<Return>", silent = true },
+		{ "<leader>cs", "<Cmd>CompetiTest show_ui<Return>", silent = true },
 	},
 }

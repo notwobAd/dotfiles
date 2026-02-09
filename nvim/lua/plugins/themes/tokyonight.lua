@@ -9,8 +9,8 @@ return {
 		transparent = true,
 	},
 	config = function(_, opts)
-		-- require("tokyonight").setup(opts)
-		-- vim.cmd("colorscheme tokyonight")
+		require("tokyonight").setup(opts)
+		vim.cmd("colorscheme tokyonight")
 	end,
 	lazy = true,
 }

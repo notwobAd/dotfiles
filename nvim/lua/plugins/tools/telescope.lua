@@ -37,10 +37,10 @@ return {
 		require("transparent").clear_prefix("Telescope")
 	end,
 	keys = {
-		{ "<leader>ff", ":Telescope find_files<Return>", silent = true },
-		{ "<leader>fg", ":Telescope live_grep<Return>", silent = true },
-		{ "<leader>fb", ":Telescope buffers<Return>", silent = true },
-		{ "<leader>fh", ":Telescope help_tags<Return>", silent = true },
-		{ "<leader>fr", ":Telescope frecency workspace=CWD<Return>", silent = true },
+		{ "<leader>ff", "<Cmd>Telescope find_files<Return>", silent = true },
+		{ "<leader>fg", "<Cmd>Telescope live_grep<Return>", silent = true },
+		{ "<leader>fb", "<Cmd>Telescope buffers<Return>", silent = true },
+		{ "<leader>fh", "<Cmd>Telescope help_tags<Return>", silent = true },
+		{ "<leader>fr", "<Cmd>Telescope frecency workspace=CWD<Return>", silent = true },
 	},
 }
