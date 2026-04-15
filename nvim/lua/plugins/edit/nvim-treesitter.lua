@@ -19,16 +19,12 @@ local ensure_installed = {
 
 return {
 	"nvim-treesitter/nvim-treesitter",
-	branch = "master",
 	lazy = false,
 	build = ":TSUpdate",
-	main = "nvim-treesitter.configs",
-	opts = {
-		ensure_installed = ensure_installed,
-		sync_install = false,
-		auto_install = false,
-		highlight = {
-			enable = true,
-		},
-	},
+	opts = {},
+	config = function(_, opts)
+		local nvim_treesitter = require("nvim-treesitter")
+		nvim_treesitter.setup(opts)
+		nvim_treesitter.install(ensure_installed)
+	end,
 }
