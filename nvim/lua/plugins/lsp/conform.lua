@@ -1,6 +1,7 @@
 local ft_to_formatter = {
 	lua = { "stylua" },
 	cpp = { "clang-format" },
+	c = { "clang-format" },
 	vue = { "prettier" },
 	typescript = { "prettier" },
 	typescriptreact = { "prettier" },
