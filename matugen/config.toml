@@ -16,3 +16,7 @@ post_hook = "kitty +kitten themes --reload-in=all 'Snow Dark'"
 [templates.rofi]
 input_path = './templates/rofi.colors.rasi'
 output_path = '~/.config/rofi/colors.rasi'
+
+[templates.starship]
+input_path = './templates/starship-colors.toml'
+output_path = '~/.config/starship/starship-matugen.toml'
