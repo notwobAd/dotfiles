@@ -3,20 +3,26 @@ command = "swww"
 arguments = ["img", "--transition-type", "any"]
 set = true
 
+# use absolute paths or ~ for home directory
+
 [templates.hyprland]
-input_path = './templates/hyprland-colors.conf'
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
 output_path = '~/.config/hypr/colors.conf'
 post_hook = 'hyprctl reload'
 
 [templates.kitty]
-input_path = './templates/kitty-colors.conf'
+input_path = '~/.config/matugen/templates/kitty-colors.conf'
 output_path = '~/.config/kitty/colors.conf'
 post_hook = "kitty +kitten themes --reload-in=all 'Snow Dark'"
 
 [templates.rofi]
-input_path = './templates/rofi.colors.rasi'
+input_path = '~/.config/matugen/templates/rofi.colors.rasi'
 output_path = '~/.config/rofi/colors.rasi'
 
 [templates.starship]
-input_path = './templates/starship-colors.toml'
+input_path = '~/.config/matugen/templates/starship-colors.toml'
 output_path = '~/.config/starship/starship-matugen.toml'
+
+[templates.yazi]
+input_path = '~/.config/matugen/templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
