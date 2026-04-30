@@ -9,7 +9,9 @@ source /usr/share/nvm/init-nvm.sh
 
 export EDITOR=nvim
 
-eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/themes/mojada.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/themes/kushal.omp.json)"
+export STARSHIP_CONFIG=~/.config/starship/starship-matugen.toml
+eval "$(starship init bash)"
 eval "$(fzf --bash --style full)"
 
 alias ls='ls --color=auto'
