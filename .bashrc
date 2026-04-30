@@ -20,13 +20,13 @@ alias lt='eza --all --tree --level=2 --git --header --time-style long-iso --icon
 alias cl='clear'
 alias hc='history -c && history -w'
 alias sps='sudo pacman -S'
-alias fetch='fastfetch'
-alias pxy="export HTTP_PROXY='http://127.0.0.1:7890' HTTPS_PROXY='http://127.0.0.1:7890'"
+alias ff='fastfetch'
+alias pxy="export HTTP_PROXY='http://127.0.0.1:7890' HTTPS_PROXY='http://127.0.0.1:7890' http_proxy='http://127.0.0.1:7890' https_proxy='http://127.0.0.1:7890' "
 alias rm='rm -I'
 alias gs='git status'
 alias ginit='git init'
 alias gadd='git add'
-alias gco='git commit'
+alias gcm='git commit'
 alias gcl='git clone'
 alias gpush='git push'
 alias gpull='git pull'
