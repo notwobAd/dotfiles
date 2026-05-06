@@ -8,16 +8,16 @@ local ensure_installed = {
 	"markdown_inline",
 	"cpp",
 	"typescript",
-	"typescriptreact",
 	"tsx",
 	"javascript",
-	"javascriptreact",
 	"vue",
 	"html",
 	"css",
 	"toml",
 	"yaml",
 }
+
+local ensure_enabled = vim.list_extend({ "typescriptreact", "javascriptreact" }, ensure_installed)
 
 return {
 	"nvim-treesitter/nvim-treesitter",
@@ -27,10 +27,10 @@ return {
 	config = function(_, opts)
 		local nvim_treesitter = require("nvim-treesitter")
 		nvim_treesitter.setup(opts)
-		nvim_treesitter.install(nvim_treesitter.get_available(ensure_installed))
+		nvim_treesitter.install(ensure_installed)
 
 		vim.api.nvim_create_autocmd("FileType", {
-			pattern = ensure_installed,
+			pattern = ensure_enabled,
 			callback = function()
 				vim.treesitter.start()
 			end,
