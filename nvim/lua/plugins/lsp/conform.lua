@@ -10,6 +10,7 @@ local ft_to_formatter = {
 	yaml = { "prettier" },
 	markdown = { "prettier" },
 	json = { "prettier" },
+	jsonc = { "prettier" },
 }
 
 return {
