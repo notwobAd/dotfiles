@@ -14,6 +14,10 @@ return {
 					fileMatch = { ".prettierrc", ".prettierrc.json", ".prettierrc." },
 					url = "https://www.schemastore.org/prettierrc.json",
 				},
+				{
+					fileMatch = { "package.json" },
+					url = "https://www.schemastore.org/package.json",
+				},
 			},
 			validate = { enable = true },
 		},
