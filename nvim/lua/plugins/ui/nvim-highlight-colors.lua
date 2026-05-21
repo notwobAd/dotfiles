@@ -4,7 +4,9 @@ return {
 		enable_tailwind = true,
 	},
 	config = function(_, opts)
-		require("nvim-highlight-colors").setup(opts)
+		local nvim_highlight_colors = require("nvim-highlight-colors")
+		nvim_highlight_colors.setup(opts)
+
 		require("blink.cmp").setup({
 			completion = {
 				menu = {
@@ -47,6 +49,19 @@ return {
 					},
 				},
 			},
+		})
+
+		local ensure_enabled = { "css", "scss", "less", "typescriptreact", "javascriptreact", "vue", "html" }
+		vim.api.nvim_create_autocmd("BufEnter", {
+			callback = function()
+				local filetype = vim.bo.filetype
+
+				if vim.list_contains(ensure_enabled, filetype) then
+					nvim_highlight_colors.turnOn()
+				else
+					nvim_highlight_colors.turnOff()
+				end
+			end,
 		})
 	end,
 }
