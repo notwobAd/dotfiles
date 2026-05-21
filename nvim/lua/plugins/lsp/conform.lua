@@ -11,6 +11,7 @@ local ft_to_formatter = {
 	markdown = { "prettier" },
 	json = { "prettier" },
 	jsonc = { "prettier" },
+	html = { "prettier" },
 }
 
 return {
