@@ -1,5 +1,6 @@
 local opt = vim.opt
 local g = vim.g
+local wo = vim.wo
 
 opt.number = true
 opt.relativenumber = true
@@ -30,3 +31,5 @@ g.loaded_netrwPlugin = 1
 opt.termguicolors = true
 
 opt.swapfile = false
+
+wo.wrap = false
