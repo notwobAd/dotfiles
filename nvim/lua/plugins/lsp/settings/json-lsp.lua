@@ -18,6 +18,10 @@ return {
 					fileMatch = { "package.json" },
 					url = "https://www.schemastore.org/package.json",
 				},
+				{
+					fileMatch = { "jsconfig.json" },
+					url = "https://www.schemastore.org/jsconfig.json",
+				},
 			},
 			validate = { enable = true },
 		},
