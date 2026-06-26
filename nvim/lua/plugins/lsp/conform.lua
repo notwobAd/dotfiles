@@ -19,7 +19,7 @@ return {
 	dependencies = {
 		"mason-org/mason.nvim",
 	},
-	event = "VeryLazy",
+	event = "BufReadPost",
 	config = function()
 		local registry = require("mason-registry")
 

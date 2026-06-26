@@ -1,8 +1,11 @@
+local ensure_enabled = { "css", "scss", "less", "typescriptreact", "javascriptreact", "vue", "html" }
+
 return {
 	"brenoprata10/nvim-highlight-colors",
 	opts = {
 		enable_tailwind = true,
 	},
+	ft = ensure_enabled,
 	config = function(_, opts)
 		local nvim_highlight_colors = require("nvim-highlight-colors")
 		nvim_highlight_colors.setup(opts)
@@ -51,7 +54,6 @@ return {
 			},
 		})
 
-		local ensure_enabled = { "css", "scss", "less", "typescriptreact", "javascriptreact", "vue", "html" }
 		vim.api.nvim_create_autocmd("BufEnter", {
 			callback = function()
 				local filetype = vim.bo.filetype
