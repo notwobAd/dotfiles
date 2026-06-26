@@ -53,7 +53,9 @@ local direction_to_resize_config = {
 -- Resize active window
 for direction, keys in pairs(direction_to_key) do
 	for _, key in ipairs(keys) do
-		hl.bind(mainMod .. " + CTRL + " .. key, hl.dsp.window.resize(direction_to_resize_config[direction]))
+		hl.bind(mainMod .. " + CTRL + " .. key, hl.dsp.window.resize(direction_to_resize_config[direction]), {
+			repeating = true,
+		})
 	end
 end
 
