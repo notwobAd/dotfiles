@@ -40,7 +40,6 @@ return {
 		{ "<leader>bl", "<Cmd>BufferLineCycleNext<Return>", silent = true },
 		{ "<C-PageDown>", "<Cmd>BufferLineCycleNext<Return>", silent = true },
 		-- Pick tab
-		{ "<S-p>", "<Cmd>BufferLinePick<Return>", silent = true },
 		{ "<leader>bp", "<Cmd>BufferLinePick<Return>", silent = true },
 		-- Delete tab
 		{ "<leader>bw", "<Cmd>bdelete!<Return>", silent = true },
