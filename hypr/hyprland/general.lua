@@ -21,10 +21,6 @@ hl.config({
 		rounding = 10,
 		rounding_power = 2,
 
-		-- Change transparency of focused and unfocused windows
-		active_opacity = 0.93,
-		inactive_opacity = 0.8,
-
 		shadow = {
 			enabled = true,
 			range = 10,
@@ -117,6 +113,13 @@ hl.window_rule({
 		pin = false,
 		focus = false,
 	},
+})
+
+hl.window_rule({
+	match = {
+		class = "kitty",
+	},
+	opacity = "0.93 0.8",
 })
 
 hl.layer_rule({
