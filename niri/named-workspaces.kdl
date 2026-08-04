@@ -1,0 +1,7 @@
+workspace "first" {
+    open-on-output "DP-2"
+}
+
+workspace "second" {
+    open-on-output "DP-2"
+}

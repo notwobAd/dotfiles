@@ -1,0 +1,7 @@
+output "DP-2" {
+    mode "1920x1080@144.000"
+    scale 1.0
+    transform "normal"
+    variable-refresh-rate on-demand=false
+    focus-at-startup
+}

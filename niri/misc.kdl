@@ -1,0 +1,38 @@
+spawn-at-startup "fcitx5"
+spawn-at-startup "waypaper" "--restore"
+spawn-at-startup "systemctl" "--user" "start" "hyprpolkitagent"
+spawn-at-startup "clash-verge"
+spawn-at-startup "qs" "-c" "noctalia-shell"
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+environment {
+    XCURSOR_THEME "ArcStarry-Cursors"
+    XCURSOR_SIZE "24"
+
+    // Nvidia driver settings
+    LIBVA_DRIVER_NAME "nvidia"
+    __GLX_VENDOR_LIBRARY_NAME "nvidia"
+
+    // use GTK2 theme in Qt5, Qt6 apps with AUR packages qt5-styleplugins and qt6gtk2
+    QT_QPA_PLATFORMTHEME "gtk2"
+
+    // Use swww wallpaper service
+    SWWW_TRANSITION_TYPE "any"
+    SWWW_TRANSITION_DURATION "2"
+    SWWW_TRANSITION_FPS "144"
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+blur {
+    on
+    passes 1
+    offset 3.0
+    noise 0.02
+    saturation 1
+}
