@@ -4,7 +4,7 @@ layout {
     default-column-display "normal"
     background-color "transparent"
 
-    // See https://github.com/niri-wm/niri/pull/3004 for more details
+    // Read https://github.com/niri-wm/niri/pull/3004 for more details
     fullscreen-backdrop-color "transparent"
 
     preset-column-widths {
