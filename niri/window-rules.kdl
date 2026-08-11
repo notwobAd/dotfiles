@@ -38,7 +38,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="Clash-verge" title="Clash Verge"
+    match app-id=r#"(?i)^clash-verge$"# title=r#"(?i)^clash verge$"#
 
     open-on-workspace "second"
     open-maximized true
