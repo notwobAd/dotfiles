@@ -13,5 +13,5 @@ return {
 			vue_plugin,
 		},
 	},
-	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+	filetypes = { "vue" },
 }
