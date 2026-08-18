@@ -55,8 +55,8 @@ binds {
     Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
     Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
 
-    Mod+Comma repeat=false { focus-workspace-up; }
-    Mod+Period repeat=false { focus-workspace-down; }
+    Mod+Comma cooldown-ms=150 { focus-workspace-up; }
+    Mod+Period cooldown-ms=150 { focus-workspace-down; }
 
     Mod+Shift+Left cooldown-ms=150 { move-column-left; }
     Mod+Shift+Right cooldown-ms=150 { move-column-right; }
