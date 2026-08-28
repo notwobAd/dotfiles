@@ -15,10 +15,10 @@ binds {
     Mod+Shift+O { toggle-overview; }
 
     // Noctalia shell
-    Mod+W repeat=false { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; }
-    Mod+M repeat=false { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "darkMode" "toggle"; }
-    Mod+Alt+L repeat=false { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
-    Mod+C repeat=false { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
+    Mod+W repeat=false { spawn "noctalia" "msg" "panel-toggle" "wallpaper"; }
+    Mod+M repeat=false { spawn "noctalia" "msg" "theme-mode-toggle"; }
+    Mod+Alt+L repeat=false { spawn "noctalia" "msg" "session" "lock"; }
+    Mod+C repeat=false { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
 
     Mod+S { screenshot; }
     Mod+Shift+S { screenshot-window; }
