@@ -44,8 +44,7 @@ return {
 			},
 			formatters = {
 				["clang-format"] = {
-					command = "clang-format",
-					args = { "--style", "Microsoft" },
+					append_args = { "--style", "Microsoft" },
 				},
 			},
 		})
