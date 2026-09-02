@@ -1,1 +1,3 @@
-return {}
+return {
+	"tailwindcss-language-server",
+}

@@ -1,1 +1,3 @@
-return {}
+return {
+	"yaml-language-server",
+}

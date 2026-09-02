@@ -1,1 +1,3 @@
-return {}
+return {
+	"vue-language-server",
+}

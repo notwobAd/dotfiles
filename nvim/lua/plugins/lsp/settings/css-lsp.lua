@@ -1,1 +1,3 @@
-return {}
+return {
+	"css-lsp",
+}
