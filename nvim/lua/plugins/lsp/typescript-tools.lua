@@ -9,6 +9,8 @@ local vue_plugin = {
 
 local ft = { "typescript", "typescriptreact", "vue" }
 
+local tsservers = { "typescript-language-server", "vue-language-server" }
+
 return {
 	"Parsifa1/typescript-tools.nvim",
 	ft = ft,
@@ -25,9 +27,12 @@ return {
 		require("typescript-tools").setup(opts)
 
 		local registry = require("mason-registry")
-		local success, package = pcall(registry.get_package, "typescript-language-server")
-		if success and not package:is_installed() then
-			package:install()
+
+		for _, tsserver in ipairs(tsservers) do
+			local success, package = pcall(registry.get_package, tsserver)
+			if success and not package:is_installed() then
+				package:install()
+			end
 		end
 	end,
 }
