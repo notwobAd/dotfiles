@@ -14,7 +14,7 @@ return {
 		overrides = {
 			buftype = {
 				nofile = {
-					enabled = false,
+					-- render_modes = true,
 				},
 			},
 		},
