@@ -13,7 +13,7 @@ return {
 						url = "https://www.schemastore.org/eslintrc.json",
 					},
 					{
-						fileMatch = { ".prettierrc", ".prettierrc.json", ".prettierrc." },
+						fileMatch = { ".prettierrc", ".prettierrc.json" },
 						url = "https://www.schemastore.org/prettierrc.json",
 					},
 					{
