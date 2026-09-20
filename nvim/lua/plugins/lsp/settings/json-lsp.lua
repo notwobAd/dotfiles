@@ -17,6 +17,10 @@ return {
 						url = "https://www.schemastore.org/prettierrc.json",
 					},
 					{
+						fileMatch = { ".lintstagedrc", ".lintstagedrc.json" },
+						url = "https://www.schemastore.org/lintstagedrc.schema.json",
+					},
+					{
 						fileMatch = { "package.json" },
 						url = "https://www.schemastore.org/package.json",
 					},
