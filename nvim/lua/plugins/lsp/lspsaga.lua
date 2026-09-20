@@ -19,5 +19,6 @@ return {
 		{ "<leader>lf", "<Cmd>Lspsaga finder<Return>", silent = true },
 		{ "<leader>ln", "<Cmd>Lspsaga diagnostic_jump_next<Return>", silent = true },
 		{ "<leader>lp", "<Cmd>Lspsaga diagnostic_jump_prev<Return>", silent = true },
+		{ "<leader>ld", "<Cmd>Lspsaga show_line_diagnostics<Return>", silent = true },
 	},
 }
