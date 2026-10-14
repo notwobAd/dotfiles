@@ -14,26 +14,51 @@ return {
 		},
 		"xiyaowong/transparent.nvim",
 	},
-	opts = {
-		defaults = {
-			layout_strategy = "horizontal",
-			layout_config = {
-				prompt_position = "top",
-			},
-		},
-		extensions = {
-			fzf = {
-				fuzzy = true,
-				overried_generic_sorter = true,
-				override_file_sorter = true,
-				case_mode = "smart_case",
-			},
-			frecency = {},
-		},
-	},
-	config = function(_, opts)
+	config = function()
 		local telescope = require("telescope")
+
+		local telescopeConfig = require("telescope.config")
+
+		local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
+		local find_command = { "rg", "--files", "--hidden" }
+		local globs = { "!**/.git/*", "!**/node_modules/*" }
+
+		table.insert(vimgrep_arguments, "--hidden")
+
+		for _, glob in ipairs(globs) do
+			table.insert(vimgrep_arguments, "--glob")
+			table.insert(vimgrep_arguments, glob)
+
+			table.insert(find_command, "--glob")
+			table.insert(find_command, glob)
+		end
+
+		local opts = {
+			defaults = {
+				vimgrep_arguments = vimgrep_arguments,
+				layout_strategy = "horizontal",
+				layout_config = {
+					prompt_position = "top",
+				},
+			},
+			pickers = {
+				find_files = {
+					find_command = find_command,
+				},
+			},
+			extensions = {
+				fzf = {
+					fuzzy = true,
+					overried_generic_sorter = true,
+					override_file_sorter = true,
+					case_mode = "smart_case",
+				},
+				frecency = {},
+			},
+		}
+
 		telescope.setup(opts)
+
 		require("transparent").clear_prefix("Telescope")
 	end,
 	keys = {
