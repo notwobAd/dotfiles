@@ -12,6 +12,7 @@ local ft_to_formatter = {
 	json = { "prettier" },
 	jsonc = { "prettier" },
 	html = { "prettier" },
+	css = { "prettier" },
 }
 
 return {
