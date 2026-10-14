@@ -10,6 +10,7 @@ return {
 				fps = 60,
 				background_colour = "#000000",
 				timeout = 1500,
+				top_down = false,
 			},
 			config = function(_, opts)
 				require("notify").setup(opts)
