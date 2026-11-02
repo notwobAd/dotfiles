@@ -54,7 +54,7 @@ return {
 			},
 		})
 
-		vim.api.nvim_create_autocmd("BufEnter", {
+		vim.api.nvim_create_autocmd("BufReadPost", {
 			callback = function()
 				local filetype = vim.bo.filetype
 
